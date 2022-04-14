@@ -1,16 +1,10 @@
-# 🌟 Dumi Template
+# 🌟 Rong-ui
 
-A doc template can assist you to develop libraries & write docs.
+# 使用
 
-English | [简体中文](./README.zh-CN.md)
-
-## 🚀 How to use?
-
-![](https://gw.alipayobjects.com/zos/bmw-prod/91791904-cdde-4408-959d-72fd0c9049b1/kj80x6lv_w1918_h352.png)
-
-## ✨ Online preview
-
-https://umijs.github.io/dumi-template/
+```javascript
+npm i rongx-ui
+```
 
 ## 📒 Catalog Introduction
 
@@ -42,18 +36,3 @@ The rest of the documents can be consulted by yourself.
 | `npm run docs:build`    | Document packaging        | -                                                                                                                  |
 | `npm run docs:deploy`   | Document release          | The default is to use GitHub Pages                                                                                 |
 | `npm run deploy`        | Document package release  | -                                                                                                                  |
-
-### README Badge
-
-Using dumi ? Add a README badge to show it off: [![dumi](https://img.shields.io/badge/docs%20by-dumi-blue)](https://github.com/umijs/dumi)
-
-```
-[![dumi](https://img.shields.io/badge/docs%20by-dumi-blue)](https://github.com/umijs/dumi)
-```
-
-## Discuss group
-
-<div>
-  <img data-type="dingtalk" src="https://gw.alipayobjects.com/zos/bmw-prod/ce3439e7-3bf9-4031-b823-6473439ec9e6/kxkiis4c_w1004_h1346.jpeg" width="300" />
-  <img data-type="wechat" src="https://gw.alipayobjects.com/zos/bmw-prod/c18bc2a5-719a-48ca-b225-c79ef88bfb43/k7m10ymd_w1004_h1346.jpeg" width="300" />
-</div>

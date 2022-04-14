@@ -1,0 +1,137 @@
+@import '../../style/default.scss';
+@import './_mixins.scss';
+
+
+.rong-btn {
+  position: relative;
+  display: inline-block;
+  color: $body-color;
+  font-weight: 400;
+  line-height: 1.5;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  background-image: none;
+  border: $btn-border-width solid transparent;
+  box-shadow: $btn-box-shadow;
+  cursor: pointer;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out;
+  &.disabled, &[disabled] {
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: .65;
+    > * {
+      pointer-events: none;
+    }
+  }
+}
+// type
+.rong-btn-default {
+  @include button-style($white, $gray-400, $body-color, $white, $primary, $primary);
+}
+
+.rong-btn-primary {
+  @include button-style($primary, $primary, $white);
+}
+
+.rong-btn-info {
+  @include button-style($info, $info, $white);
+}
+
+.rong-btn-warning {
+  @include button-style($warning, $warning, $white);
+}
+
+.rong-btn-danger {
+  @include button-style($danger, $danger, $white);
+}
+
+.rong-btn-text {
+  @include button-style(transparent, transparent, $body-color);
+  box-shadow: none;
+}
+
+.rong-btn-dashed {
+  @include button-style($white, $gray-400, $body-color, $white, $primary, $primary);
+  border-style: dotted;
+}
+
+.rong-btn-link {
+  color: $btn-link-color;
+  font-weight: $font-weight-normal;
+  text-decoration: $link-decoration;
+  background-color: transparent;
+  box-shadow: none;
+  &:hover {
+    color: $btn-link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+  &:focus, &.focus {
+    text-decoration: $link-hover-decoration;
+    box-shadow: none;
+  }
+  &:disabled, &.disabled {
+    color: $btn-link-disabled-color;
+    pointer-events: none;
+  }
+}
+
+// size
+.rong-btn-lg {
+  @include button-size(
+    $btn-padding-y-lg,
+    $btn-padding-x-lg,
+    $btn-font-size-lg,
+    $btn-border-radius-lg
+  );
+}
+
+.rong-btn-md {
+  @include button-size(
+    $btn-padding-y-md,
+    $btn-padding-x-md,
+    $btn-font-size-md,
+    $btn-border-radius-md
+  );
+}
+
+.rong-btn-sm {
+  @include button-size(
+    $btn-padding-y-sm,
+    $btn-padding-x-sm,
+    $btn-font-size-sm,
+    $btn-border-radius-sm
+  );
+}
+
+// shape
+.rong-btn-circle {
+  min-width: 32px;
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.rong-btn-round {
+  border-radius: 30%;
+}
+
+// block
+.rong-btn-block {
+  width: 100%;
+}
+
+// icon
+// .rong-btn-icon-only {
+//   width: 32px;
+//   height: 32px;
+//   padding: 2.4px 0;
+//   font-size: 16px;
+//   border-radius: 2px;
+// }
+
+// .rong-btn > .anticon + span,
+// .rong-btn > span + .anticon {
+//   margin-left: 8px;
+// }

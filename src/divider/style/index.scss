@@ -1,0 +1,43 @@
+.rong-divider{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #999;
+}
+.rong-divider::before,.rong-divider::after{
+  content: '';
+  flex: 1;
+  border-top: 1px solid rgb(128, 128, 128);
+}
+
+// 左分割
+  .rong-divider-left::before{
+    flex: 1;
+  }
+
+  .rong-divider-left::after{
+    flex: 10;
+  }
+
+  // 右分割
+  .rong-divider-right::before{
+    flex: 10;
+  }
+
+
+  .rong-divider-right::after{
+    flex: 1;
+  }
+
+  // 点线分割
+  .rong-divider-dotted::after ,.rong-divider-dotted::before{
+    border-top: 1px dotted gray;
+  }
+
+  // 虚线分割
+  .rong-divider-dashed::after ,.rong-divider-dashed::before{
+    border-top: 1px dashed gray;
+  }
+
+
+

@@ -1,3 +1,3 @@
 import React from 'react';
-
-export default ({ title }: { title: string }) => <h1>{title}</h1>;
+import './style/index.scss';
+export default ({ title }: { title: string }) => <h1>{title}sss</h1>;

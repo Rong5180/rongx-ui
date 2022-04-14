@@ -1,6 +1,6 @@
 import { defineConfig } from 'dumi';
 
-const repo = 'dumi-template';
+const repo = 'rongx-ui';
 
 export default defineConfig({
   title: repo,
@@ -21,5 +21,6 @@ export default defineConfig({
       path: 'https://github.com/umijs/dumi-template',
     },
   ],
+  sass: {},
   // more config: https://d.umijs.org/config
 });

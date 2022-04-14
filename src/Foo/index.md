@@ -1,6 +1,9 @@
 ---
+title: Foo
+group:
+  title: Foo
 nav:
-  title: Components
+  title: '组件'
   path: /components
 ---
 
@@ -10,9 +13,11 @@ Demo:
 
 ```tsx
 import React from 'react';
-import { Foo } from 'dumi-template';
+import { Foo } from 'rongx-ui';
 
 export default () => <Foo title="First Demo" />;
 ```
 
-More skills for writing demo: https://d.umijs.org/guide/demo-principle
+### 基础用法
+
+<code src="./demo/test.tsx" />
